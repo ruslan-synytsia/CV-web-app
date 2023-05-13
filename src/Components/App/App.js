@@ -12,15 +12,15 @@ function App() {
     <>
       <Routes>
         <Route path={'/'} element={<Layout />} >
-          <Route path={'*'} element={<NotFound />} />
-          <Route path={'contacts'} element={<Contacts />} />
-          <Route path={'projects'} element={<Projects />} />
-          <Route path={'about'} element={<About />} />
           <Route index element={<Main />} />
+          <Route path={'/about'} element={<About />} />
+          <Route path={'/projects'} element={<Projects />} />
+          <Route path={'/contacts'} element={<Contacts />} />
         </Route>
+        <Route path={'*'} element={<NotFound />} />
       </Routes>
     </>
   )
-};
+}
 
 export default App;
