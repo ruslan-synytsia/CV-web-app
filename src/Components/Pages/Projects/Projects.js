@@ -4,6 +4,12 @@ import style from './Projects.module.css';
 function Projects() {
     const projects = [
         {
+            header: "Weather Application",
+            image: "./weather.png",
+            description: "This is Single Page Application was created using React.",
+            link: "https://weather-app-f36y.onrender.com/"
+        },
+        {
             header: "Find Movies Application",
             image: "./project.png",
             description: "This is Single Page Application was created using React.",
