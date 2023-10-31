@@ -6,7 +6,7 @@ function Projects() {
         {
             header: "Chat Application",
             image: "./chat.png",
-            description: "This simple Fullstack application was created based on MERN.",
+            description: "This simple Fullstack application was created based on MERN.</br>The application is written in three parts: client, authentication server (REST) and chat server (WebSockets).</br>First, the authentication process occurs - recording a new user in the database and sending the server cookies (HttpOnly) with access tokens in two options: accessToken&refreshToken or only accessToken to the client, depending on the state of the AutoLogin component (true/false).</br>Access to the protected chat resource remains open only as long as the Access Token is valid.</br>The interaction between the client and the chat server is carried out using the socket.io library on the secure page <b>/home</b>.</br>The chat server application implements the ability to exchange messages, like between all chat participants in Public Chat, and private chat rooms.</br>In this FullStack application, the basic functionality is intentionally implemented in order to demonstrate the implementation, the above technologies and libraries.",
             link: "https://corporate-chat-app.vercel.app/"
         },
         {
