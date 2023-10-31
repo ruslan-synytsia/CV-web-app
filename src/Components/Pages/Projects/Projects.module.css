@@ -2,6 +2,10 @@
     padding-top: 7rem;
 }
 
+.Projects span {
+    display: inline-block;
+}
+
 .Projects_item {
     display: grid;
     grid-template-rows: repeat(3, auto);
