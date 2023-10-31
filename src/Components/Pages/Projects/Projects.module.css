@@ -3,7 +3,7 @@
 }
 
 .Projects span {
-    display: inline-block;
+    display: block;
 }
 
 .Projects_item {
