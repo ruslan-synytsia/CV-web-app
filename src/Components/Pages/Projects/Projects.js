@@ -18,7 +18,7 @@ function Projects() {
         {
             header: "Find Movies Application",
             image: "./project.png",
-            description: "This Single Page Application was created using React.",
+            description: "This React application was written in conjunction with a server on Node/Express (node-telegram-bot-api).|However, later it was decided to disable the bot, leaving only the client part.|Redux is used as a state manager (I used the @reduxjs/toolkit package to work with the manager).|The source of external data displayed on the client is the API from https://www.themoviedb.org/.|The application has a fairly simple UI/UX, the main concept here is minimalism and an intuitive approach:|- simple transition through filters (genres, rating, year),|- quick display of search results, both by selected criteria and by default values,|- the ability to view detailed information of any of the list elements and quickly exit to the main screen.|The layout was developed for the Telegram application and tested on it.",
             link: "https://symphonious-paprenjak-fac495.netlify.app/"
         },
         {
@@ -42,7 +42,7 @@ function Projects() {
         {
             header: "JS Calculator",
             image: "./project-4.png",
-            description: "This html template was created using HTML&CSS and JS.",
+            description: "My very first web application was written in 2020, right after learning basic things in JavaScript.|The application simulates a desktop with a calculator deployed on it, which can be moved by left clicking and holding within the window.|I used eval as the core of all calculations (I know this is not a good solution, but in this particular case, why not).|All calculation results are based on strings, which are processed in a certain way (quite complex) and passed to eval().|The calculator implements not only basic, but also some engineering functions.",
             link: "http://resume-ruslan-synytsia.atwebpages.com/calculator/"
         }
     ];
