@@ -22,22 +22,10 @@ function Projects() {
             link: "https://symphonious-paprenjak-fac495.netlify.app/"
         },
         {
-            header: "Travel Blog Template",
-            image: "./project-1.png",
-            description: "This html template was created using HTML&CSS.",
-            link: "http://resume-ruslan-synytsia.atwebpages.com/travel-template/"
-        },
-        {
             header: "Bouncy Template",
             image: "./project-2.png",
             description: "This html template was created using HTML&CSS and JS.",
             link: "http://resume-ruslan-synytsia.atwebpages.com/bouncy-template/"
-        },
-        {
-            header: "JS Game Application",
-            image: "./project-3.png",
-            description: "This JS application was created using HTML&CSS and JS Canvas.",
-            link: "http://resume-ruslan-synytsia.atwebpages.com/hangman-game/"
         },
         {
             header: "JS Calculator",
