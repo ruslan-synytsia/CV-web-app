@@ -39,7 +39,12 @@ function Menu() {
         <>
             <nav>
                 <ul className={style.container}>
-                    <li className={style.logo}><Link to={'/'}><img src={'./logo.png'} alt="Logo" /></Link></li>
+                    <li className={style.logo}>
+                        <Link to={'/'}>
+                            <span className={style.top_part}>ruslan__</span>
+                            <span className={style.bottom_part}>synytsia</span>
+                        </Link>
+                    </li>
                     {menuItems.map((menuItem, index) => (
                         <li key={index}>
                             <Link to={menuItem.path} className={getLiClassName(menuItem.path)}>
