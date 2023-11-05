@@ -41,7 +41,7 @@ function Menu() {
                 <ul className={style.container}>
                     <li className={style.logo}>
                         <Link to={'/'}>
-                            <span className={style.top_part}>ruslan__</span>
+                            <span className={style.top_part}>&#123; ruslan__ &#125;</span>
                             <span className={style.bottom_part}>synytsia</span>
                         </Link>
                     </li>
