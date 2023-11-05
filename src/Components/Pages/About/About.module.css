@@ -72,3 +72,24 @@
     list-style: none;
     padding: 0;
 }
+
+@media screen and (max-width: 720px) {
+    .About {
+        row-gap: 2rem;
+    }
+
+    .About article {
+        margin-bottom: 0;
+    }
+
+    .About_skills {
+        width: 7rem;
+        grid-row: 1/2;
+    }
+
+    .About_goals,
+    .About_qualities,
+    .About_hobbies {
+        grid-column: 1/5;
+    }
+}
