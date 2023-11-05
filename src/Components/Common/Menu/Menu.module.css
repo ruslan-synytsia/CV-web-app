@@ -38,7 +38,7 @@
 header {
     position: fixed;
     width: 100vw;
-    padding-top: 1rem;
+    padding: 1rem 0;
     background-color: #ffffff;
     z-index: 1000;
 }
