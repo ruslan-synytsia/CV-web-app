@@ -28,6 +28,13 @@
     width: 100%;
 }
 
+.Main_content_content a {
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
 .Main_content_img {
     display: flex;
     justify-content: center;
