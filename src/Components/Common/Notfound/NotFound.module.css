@@ -1,3 +1,12 @@
 .NotFound {
-    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.NotFound h1 {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 0.5rem 3rem;
 }
