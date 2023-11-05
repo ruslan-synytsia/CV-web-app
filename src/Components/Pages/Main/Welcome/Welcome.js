@@ -3,10 +3,11 @@ import style from "./Welcome.module.css";
 import cx from 'classnames/bind';
 import Typewriter from "../../../Common/Typewriter/Typewriter";
 import { setStart } from '../../../../Redux/Reducers/initReducer';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Welcome = () => {
     const dispatch = useDispatch();
+    const isStarted = useSelector(state => state.init.isStarted);
 
     const [state, setState] = useState({
         invisible: false,
@@ -32,7 +33,11 @@ const Welcome = () => {
         )
     };
 
-    return changeVisible();
+    if (!isStarted) {
+        return changeVisible();
+    } else {
+        return null
+    }
 };
 
 export default Welcome;
