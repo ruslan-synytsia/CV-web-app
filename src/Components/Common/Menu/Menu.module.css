@@ -8,7 +8,31 @@
 }
 
 .logo {
-    line-height: .7rem;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 0;
+    width: 10rem;
+}
+
+.logo span {
+    display: block;
+    margin: -.32rem 0;
+    letter-spacing: -.05rem;
+    text-transform: uppercase;
+    transition: text-shadow .5s ease;
+}
+
+.logo span:hover {
+    text-shadow: 0 0 .5rem rgba(255, 255, 255, .5);
+}
+
+.logo .top_part {
+    font-size: .75rem;
+    margin-left: -.5rem;
+}
+
+.logo .bottom_part {
+    font-size: 1rem;
 }
 
 header {
