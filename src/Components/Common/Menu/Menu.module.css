@@ -53,10 +53,7 @@ header .container li a.active {
 .mobileMenu {
     display: none;
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 5rem;
+    height: 6rem;
     text-align: center;
     z-index: 10;
 }
