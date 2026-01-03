@@ -8,6 +8,7 @@ function Menu() {
     const [currentURL, setCurrentURL] = useState(null);
 
     const menuItems = [
+        { path: '/', label: 'Home' },
         { path: '/about', label: 'About me' },
         { path: '/projects', label: 'My projects' },
         { path: '/contacts', label: 'Contacts' }
@@ -39,12 +40,6 @@ function Menu() {
         <>
             <nav>
                 <ul className={style.container}>
-                    <li className={style.logo}>
-                        <Link to={'/'}>
-                            <span className={style.top_part}>&#123; ruslan__ &#125;</span>
-                            <span className={style.bottom_part}>synytsia</span>
-                        </Link>
-                    </li>
                     {menuItems.map((menuItem, index) => (
                         <li key={index}>
                             <Link to={menuItem.path} className={getLiClassName(menuItem.path)}>
