@@ -20,7 +20,7 @@ const Welcome = () => {
             setState(prevState => ({ ...prevState, display: false }));
             dispatch(setStart(true));
         }, 1000);
-    }, 15000);
+    }, 20000);
 
 
     const changeVisible = () => {
