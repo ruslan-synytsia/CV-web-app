@@ -68,24 +68,24 @@ function Form(props) {
 
     return (
         <div className={style.Form}>
-            <h2>Are you ready to have me on your team? Just write to me.</h2>
-            <span>Write to me and I will answer you soon!</span>
+            <h2>Open to new opportunities.</h2>
+            <span>Feel free to reach out.</span>
             <label htmlFor="username">Your name</label>
             <span className={errors.username ? cx(style.Error_username, style.err_display) : style.Error_username}>{errors.username}</span>
-            <input type="text" id="username" name="username" placeholder={'Name'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.username} />
+            <input type="text" id="username" name="username" placeholder={'John Smith'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.username} />
             <label htmlFor="email">Your email</label>
             <span className={errors.email ? cx(style.Error_email, style.err_display) : style.Error_email}>{errors.email}</span>
-            <input type="email" id="email" name="email" placeholder={'your@company.com'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.email} />
-            <label htmlFor="message">Write your offer</label>
+            <input type="email" id="email" name="email" placeholder={'john@company.com'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.email} />
+            <label htmlFor="message">Your message</label>
             <span className={errors.message ? cx(style.Error_message, style.err_display) : style.Error_message}>{errors.message}</span>
-            <textarea id="message" name="message" rows="2" placeholder={'Your message here...'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.message} />
+            <textarea id="message" name="message" rows="2" placeholder={'Tell me a bit about your project or role'} onChange={handleInputChange} onBlur={e => validate(e.target.value, e.target.name)} value={formData.message} />
             <button onClick={handleSubmit} className={!isFormValid || isFetching ? style.disabled : ''} disabled={!isFormValid || isFetching}>
-                {isFetching ? <Preloader /> : 'Send me your offer!'}
+                {isFetching ? <Preloader /> : 'Contact me'}
             </button>
             <div className={success ? cx(style.Form_finish, style.visible) : style.Form_finish}>
                 <div className={style.success}></div>
-                <h2>Your message is sended</h2>
-                <p>Thanh you for your offer!</p>
+                <h2>Thank you — I’ll get back to you shortly.</h2>
+                <p>Thank you for your offer!</p>
             </div>
             <div className={error ? cx(style.Form_finish_error, style.visible) : style.Form_finish_error}>
                 <span className={style.error}>X</span>

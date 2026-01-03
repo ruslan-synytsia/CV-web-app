@@ -14,33 +14,33 @@ function Contacts() {
         <section className={style.Contacts}>
             <div className={style.Contacts_sidebar}>
                 <div className={style.Contacts_sidebar_item}>
-                    <h3>Write to me</h3>
+                    <h3>Message me</h3>
                     {contacts.viber && <><div className={style.Contacts_sidebar_item_el}>
-                        <span>My viber number</span>
+                        <span>Viber</span>
                         <a href={`viber://add?number=${contacts.viber}`}>{contacts.viber}</a>
                     </div>
                         <span>or</span></>}
                     <div className={style.Contacts_sidebar_item_el}>
-                        <span>My email</span>
+                        <span>Email</span>
                         <a href={`mailto:${contacts.mail}`}>{contacts.mail}</a>
                     </div>
                 </div>
                 <div className={style.Contacts_sidebar_item}>
-                    <h3>Call to me</h3>
+                    <h3>Phone</h3>
                     <div className={style.Contacts_sidebar_item_el}>
                         <span>My phone number</span>
                         <a href={`tel:${contacts.phone}`}>{contacts.phone}</a>
                     </div>
                 </div>
                 {contacts.linkedIn && <div className={style.Contacts_sidebar_item}>
-                    <h3>Visit me</h3>
+                    <h3>Connect with me</h3>
                     <div className={style.Contacts_sidebar_item_el}>
                         <span>LinkedIn</span>
                         <a href={contacts.linkedIn} target={'_blank'}>{contacts.linkedIn}</a>
                     </div>
                 </div>}
                 {contacts.github && <div className={style.Contacts_sidebar_item}>
-                    <h3>See my code</h3>
+                    <h3>View my code</h3>
                     <div className={style.Contacts_sidebar_item_el}>
                         <span>GitHub</span>
                         <a href={contacts.github} target={'_blank'}>{contacts.github}</a>
