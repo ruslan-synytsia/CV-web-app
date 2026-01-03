@@ -27,7 +27,7 @@ const Welcome = () => {
         return (
             <div className={!state.invisible ? cx(style.Welcome) : state.display ? cx(style.Welcome, style.invisible) : cx(style.Welcome, style.invisible, style.display_none)}>
                 <h1>
-                    <Typewriter text={`Hi, my name is Ruslan./Welcome to my personal website.`} />
+                    <Typewriter text={`Hi, my name is Ruslan./Frontend Developer./ /Welcome to my personal website and portfolio.`} />
                 </h1>
             </div>
         )
