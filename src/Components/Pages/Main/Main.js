@@ -1,15 +1,9 @@
 import React from 'react';
 import style from './Main.module.css';
-import Welcome from "./Welcome/Welcome";
-import { selectStart } from '../../../Redux/Reducers/initReducer';
-import { useSelector } from 'react-redux';
 
 function Main() {
-    const isStart = useSelector(selectStart);
-
     return (
         <>
-            {!isStart ? <Welcome /> : null}
             <section className={style.Main}>
                 <div className={style.Main_content}>
                     <div className={style.Main_content_img}>

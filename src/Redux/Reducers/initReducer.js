@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-// import { createSelector } from 'reselect';
 
 const initSlice = createSlice({
   name: 'init',
@@ -16,5 +15,4 @@ const initSlice = createSlice({
 export const { setStart } = initSlice.actions;
 export default initSlice.reducer;
 
-// объявление селектора
 export const selectStart = state => state.init.isStart;
