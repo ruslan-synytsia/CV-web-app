@@ -2,13 +2,8 @@
   "clean_urls": false,
   "rewrites": [
     {
-      "source": "/contacts",
-      "destination": "/index.html"
-    },
-    {
       "source": "/**",
-      "status": 404,
-      "destination": "/not-found.html"
+      "destination": "/index.html"
     }
   ]
 }
